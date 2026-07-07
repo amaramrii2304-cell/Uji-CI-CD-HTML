@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GarasiAlang - Platform Bengkel Permotoran Modern & Presisi</title>
+        <!-- Tailwind CSS & Google Fonts Inter -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <style>
+            body { font-family: 'Inter', sans-serif; }
+        </style>
+    </head>
+    <body class="bg-slate-950 font-sans text-slate-100 antialiased selection:bg-orange-500 selection:text-white">
+        
+        <!-- BANNER INDIKATOR PIPA CI/CD -->
+        <div class="bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 text-white text-center py-2.5 px-4 font-bold text-xs md:text-sm tracking-wider shadow-md animate-pulse">
+            🚀 PRODUCTION SUCCESS: Kluster Aplikasi GarasiAlang Berhasil Terkompilasi via Pipa Otomatisasi Vercel CD!
+        </div>
+
+        <!-- STICKY NAVIGATION BAR -->
+        <nav class="bg-slate-950/90 backdrop-blur-md shadow-xl border-b border-slate-800 sticky top-0 z-50 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-20">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-11 h-11 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-orange-900/30">
+                            🔧
+                        </div>
+                        <span class="text-2xl font-black bg-gradient-to-r from-orange-500 via-amber-400 to-orange-500 bg-clip-text text-transparent tracking-tight">
+                            GarasiAlang
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-1 sm:space-x-4">
+                        <a href="#home" class="text-slate-400 hover:text-orange-500 px-3 py-2 rounded-lg text-sm font-semibold transition">Home</a>
+                        <a href="#fitur" class="text-slate-400 hover:text-orange-500 px-3 py-2 rounded-lg text-sm font-semibold transition">Fitur</a>
+                        <a href="#produk" class="text-slate-400 hover:text-orange-500 px-3 py-2 rounded-lg text-sm font-semibold transition">Katalog</a>
+                        <a href="#harga" class="text-slate-400 hover:text-orange-500 px-3 py-2 rounded-lg text-sm font-semibold transition">Paket</a>
+                        <a href="#statistik" class="text-slate-400 hover:text-orange-500 px-3 py-2 rounded-lg text-sm font-semibold transition">Statistik</a>
+                        <a href="#about" class="text-slate-400 hover:text-orange-500 px-3 py-2 rounded-lg text-sm font-semibold transition">Tentang</a>
+                        
+                        <!-- INDIKATOR KERANJANG BELANJA (MOCK CART) -->
+                        <div class="relative cursor-pointer p-2.5 bg-slate-900 rounded-xl hover:bg-orange-500/10 text-slate-300 hover:text-orange-500 transition ml-2 border border-slate-800">
+                            🛠️
+                            <span class="absolute -top-1.5 -right-1.5 bg-orange-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full animate-bounce">
+                                2
+                            </span>
+                        </div>
+
+                        <div class="pl-3 border-l border-slate-800 ml-2 hidden lg:block">
+                            <a href="#login" class="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+                                Masuk Akun
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="relative bg-slate-950 py-36 md:py-48 text-white overflow-hidden border-b border-slate-900">
+            <div class="absolute top-0 right-0 -mt-24 -mr-24 w-[500px] h-[500px] bg-orange-600 rounded-full blur-[120px] opacity-10"></div>
+            <div class="absolute bottom-0 left-0 -mb-24 -ml-24 w-[500px] h-[500px] bg-red-600 rounded-full blur-[120px] opacity-10"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <span class="inline-flex items-center gap-2 py-2 px-4 rounded-full text-xs font-bold bg-white/5 text-orange-400 mb-8 border border-white/10 backdrop-blur-md">
+                    <span class="size-2 rounded-full bg-orange-500 animate-ping"></span>
+                    Solusi Otomotif Terintegrasi &bull; Era Industri 4.0
+                </span>
+                
+                <h1 class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight mb-8 leading-none max-w-5xl mx-auto">
+                    Performa Motor Maksimal <br class="hidden md:block"/>Dalam Genggaman
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto text-slate-400 font-medium mb-12 leading-relaxed">
+                    Sistem pemesanan servis terotomatisasi, diagnosis digital berbasis data, serta penyedia suku cadang premium bergaransi resmi.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-5">
+                    <a href="#produk" class="w-full sm:w-auto bg-orange-600 text-white font-extrabold px-8 py-4.5 rounded-xl shadow-xl shadow-orange-950/50 hover:bg-orange-700 transition transform hover:-translate-y-1 text-center">
+                        Jelajahi Servis & Part
+                    </a>
+                    <a href="#harga" class="w-full sm:w-auto bg-slate-900 border border-slate-800 text-slate-300 font-bold px-8 py-4.5 rounded-xl hover:bg-slate-800 hover:border-slate-600 transition text-center">
+                        Lihat Estimasi Biaya
+                    </a>
+                </div>
+            </div>
+            <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:32px_32px]"></div>
+        </section>
+
+        <!-- FITUR UTAMA BENTO GRID -->
+        <section id="fitur" class="py-32 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-24 max-w-3xl mx-auto">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-orange-500 mb-3">Presisi & Kecepatan</h2>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Layanan Eksklusif Garasi</h2>
+                    <p class="mt-4 text-lg text-slate-400">Dikelola langsung oleh jajaran mekanik bersertifikat dengan standar pabrikan dunia.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+                    <!-- Fitur 1 -->
+                    <div class="group relative p-8 md:p-10 bg-slate-900/50 border border-slate-850 rounded-3xl hover:border-orange-500/30 transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1.5 shadow-lg">
+                        <div>
+                            <div class="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-2xl flex items-center justify-center mb-8 font-bold text-2xl group-hover:bg-orange-600 group-hover:text-white transition shadow-md">
+                                🏍️
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-orange-500 transition-colors">Booking Servis</h3>
+                            <p class="text-slate-400 leading-relaxed">Jadwalkan perawatan rutin berkala atau modifikasi performa tinggi tanpa perlu antre di bengkel fisik.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800 flex items-center text-sm font-bold text-orange-500 gap-1 opacity-0 group-hover:opacity-100 transition duration-300">
+                            Ambil Slot Jadwal &rarr;
+                        </div>
+                    </div>
+
+                    <!-- Fitur 2 -->
+                    <div class="group relative p-8 md:p-10 bg-slate-900/50 border border-slate-850 rounded-3xl hover:border-orange-500/30 transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1.5 shadow-lg">
+                        <div>
+                            <div class="w-14 h-14 bg-amber-500/10 text-amber-500 rounded-2xl flex items-center justify-center mb-8 font-bold text-2xl group-hover:bg-amber-600 group-hover:text-white transition shadow-md">
+                                🤖
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-amber-500 transition-colors">Diagnosis Pintar</h3>
+                            <p class="text-slate-400 leading-relaxed">Rekomendasi tindakan perbaikan otomatis berbasis algoritma riwayat kendala dan pemakaian mesin motor.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800 flex items-center text-sm font-bold text-amber-500 gap-1 opacity-0 group-hover:opacity-100 transition duration-300">
+                            Mulai Cek Sistem &rarr;
+                        </div>
+                    </div>
+
+                    <!-- Fitur 3 -->
+                    <div class="group relative p-8 md:p-10 bg-slate-900/50 border border-slate-850 rounded-3xl hover:border-orange-500/30 transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-1.5 shadow-lg">
+                        <div>
+                            <div class="w-14 h-14 bg-slate-800 text-slate-300 rounded-2xl flex items-center justify-center mb-8 font-bold text-2xl group-hover:bg-slate-700 group-hover:text-white transition shadow-md">
+                                ⚡
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-orange-500 transition-colors">Suku Cadang Ori</h3>
+                            <p class="text-slate-400 leading-relaxed">Akses penuh ke jaminan inventaris suku cadang orisinal yang terhubung langsung ke rantai pasok distributor pusat.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800 flex items-center text-sm font-bold text-slate-400 gap-1 opacity-0 group-hover:opacity-100 transition duration-300">
+                            Periksa Inventaris &rarr;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KATALOG PRODUK DAN SERVIS -->
+        <section id="produk" class="py-24 bg-slate-900/30 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20 max-w-2xl mx-auto">
+                    <span class="text-xs font-bold uppercase tracking-widest text-orange-500 block mb-2">Komoditas Otomotif</span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Komponen Performa Tinggi</h2>
+                    <p class="mt-3 text-slate-400">Daftar item dan paket pengerjaan terlaris pilihan komunitas pelanggan GarasiAlang.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Produk 1 -->
+                    <div class="bg-slate-950 border border-slate-850 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group hover:border-orange-500/20">
+                        <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-6xl relative">
+                            🧪
+                            <span class="absolute top-3 left-3 bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">100% Ester</span>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg text-white mb-1 group-hover:text-orange-500 transition">Oli Mesin Racing Pro 1L</h4>
+                            <p class="text-xs text-slate-500 mb-4">Pelumas Premium Standar Balap</p>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-orange-500 font-extrabold text-lg">Rp 175.000</span>
+                                <button class="bg-slate-900 hover:bg-orange-600 border border-slate-800 hover:border-orange-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shadow-md">
+                                    + Ambil Part
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 2 -->
+                    <div class="bg-slate-950 border border-slate-850 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group hover:border-orange-500/20">
+                        <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-6xl relative">
+                            ⚙️
+                            <span class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-bold px-2 py-1 rounded-md">Heavy Duty</span>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg text-white mb-1 group-hover:text-orange-500 transition">Drive Chain Set Gold Edition</h4>
+                            <p class="text-xs text-slate-500 mb-4">Gir & Rantai Presisi Material Baja</p>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-orange-500 font-extrabold text-lg">Rp 450.000</span>
+                                <button class="bg-slate-900 hover:bg-orange-600 border border-slate-800 hover:border-orange-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shadow-md">
+                                    + Ambil Part
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 3 -->
+                    <div class="bg-slate-950 border border-slate-850 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group hover:border-orange-500/20">
+                        <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-6xl relative">
+                            🧰
+                            <span class="absolute top-3 left-3 bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded-md">Paket Servis</span>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg text-white mb-1 group-hover:text-orange-500 transition">Tune Up Injeksi & Reset ECU</h4>
+                            <p class="text-xs text-slate-500 mb-4">Optimalisasi Pembersihan Sistem Pembakaran</p>
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-orange-500 font-extrabold text-lg">Rp 120.000</span>
+                                <button class="bg-slate-900 hover:bg-orange-600 border border-slate-800 hover:border-orange-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition shadow-md">
+                                    + Ambil Paket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FITUR TERBARU: PRICING TABLE (PAKET BIAYA TRANSPARAN) -->
+        <section id="harga" class="py-24 bg-slate-950 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20 max-w-2xl mx-auto">
+                    <span class="text-xs font-bold uppercase tracking-widest text-orange-500 block mb-2">Estimasi Transparan</span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Paket Perawatan Berkala</h2>
+                    <p class="mt-3 text-slate-400">Biaya transparan di awal tanpa ada tambahan biaya tersembunyi saat pengerjaan.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                    <!-- Paket Ringan -->
+                    <div class="p-8 bg-slate-900/40 border border-slate-850 rounded-3xl flex flex-col justify-between shadow-lg">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2">Servis Reguler</h4>
+                            <p class="text-xs text-slate-500 mb-6">Cocok untuk perawatan rutin bulanan.</p>
+                            <div class="text-3xl font-black text-orange-500 mb-6">Rp 75.000</div>
+                            <ul class="space-y-3 text-sm text-slate-400 border-t border-slate-800 pt-6">
+                                <li>• Pembersihan Filter Udara</li>
+                                <li>• Penyelarasan Rantai Roda</li>
+                                <li>• Cek Sistem Pengereman</li>
+                                <li>• Pembersihan Busi</li>
+                            </ul>
+                        </div>
+                        <a href="#login" class="mt-8 block w-full bg-slate-800 text-center text-white text-xs font-bold py-3 rounded-xl hover:bg-slate-700 transition">Pilih Paket</a>
+                    </div>
+
+                    <!-- Paket Populer -->
+                    <div class="p-8 bg-slate-900 border-2 border-orange-500 rounded-3xl flex flex-col justify-between relative shadow-2xl">
+                        <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-orange-600 text-white text-[10px] font-black uppercase tracking-widest py-1 px-4 rounded-full shadow">Rekomendasi</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2">Tune Up Eksekutif</h4>
+                            <p class="text-xs text-slate-500 mb-6">Optimalisasi penuh komponen vital.</p>
+                            <div class="text-3xl font-black text-orange-500 mb-6">Rp 150.000</div>
+                            <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-850 pt-6">
+                                <li>• Semua Fitur Servis Reguler</li>
+                                <li>• Gurah Mesin / Carbon Cleaner</li>
+                                <li>• Kalibrasi Injector / Karburator</li>
+                                <li>• Reset Sistem Injeksi & ECU</li>
+                            </ul>
+                        </div>
+                        <a href="#login" class="mt-8 block w-full bg-orange-600 text-center text-white text-xs font-bold py-3 rounded-xl hover:bg-orange-700 transition shadow-md">Pilih Paket</a>
+                    </div>
+
+                    <!-- Paket Pro -->
+                    <div class="p-8 bg-slate-900/40 border border-slate-850 rounded-3xl flex flex-col justify-between shadow-lg">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2">Ultimate Performance</h4>
+                            <p class="text-xs text-slate-500 mb-6">Penyelarasan menyeluruh & bongkar semi.</p>
+                            <div class="text-3xl font-black text-orange-500 mb-6">Rp 275.000</div>
+                            <ul class="space-y-3 text-sm text-slate-400 border-t border-slate-800 pt-6">
+                                <li>• Semua Fitur Tune Up Eksekutif</li>
+                                <li>• Bongkar & Bersihkan Blok CVT / Gardan</li>
+                                <li>• Penyetelan Celah Katup / Klep</li>
+                                <li>• Skir Klep & Ganti Seal Katup</li>
+                            </ul>
+                        </div>
+                        <a href="#login" class="mt-8 block w-full bg-slate-800 text-center text-white text-xs font-bold py-3 rounded-xl hover:bg-slate-700 transition">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION STATISTIK -->
+        <section id="statistik" class="py-24 bg-slate-950 text-white relative overflow-hidden border-t border-slate-900">
+            <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-3">Rekam Jejak Bengkel</h2>
+                    <p class="text-3xl sm:text-4xl font-black tracking-tight">Kepercayaan Komunitas Riders</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-850 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-5xl font-extrabold text-orange-500 mb-2">8,500+</div>
+                        <p class="text-xs sm:text-slate-400 font-medium uppercase tracking-wider">Motor Ditangani</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-850 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-5xl font-extrabold text-orange-500 mb-2">42 Orang</div>
+                        <p class="text-xs sm:text-slate-400 font-medium uppercase tracking-wider">Mekanik Ahli</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-850 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-5xl font-extrabold text-orange-500 mb-2">100%</div>
+                        <p class="text-xs sm:text-slate-400 font-medium uppercase tracking-wider">Suku Cadang Ori</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-850 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-5xl font-extrabold text-orange-500 mb-2">4.9 / 5</div>
+                        <p class="text-xs sm:text-slate-400 font-medium uppercase tracking-wider">Tingkat Kepuasan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about" class="py-24 bg-slate-900/40 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-orange-500 block mb-3">Misi Utama Kami</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                            Membawa Standar Performa Balap Ke Motor Harian Anda
+                        </h2>
+                        <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                            GarasiAlang didirikan sebagai pionir sistem tata kelola perawatan kendaraan bermotor berbasis komputasi modern. Kami berdedikasi tinggi memberikan transparansi kalkulasi biaya penanganan, estimasi waktu pengerjaan yang akurat, serta jaminan keaslian komponen demi keselamatan berkendara di jalan raya.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-slate-950 to-slate-900 p-8 rounded-3xl border border-slate-850 relative overflow-hidden">
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-500/5 rounded-full blur-2xl"></div>
+                        <h4 class="font-bold text-white mb-4 text-lg flex items-center gap-2">
+                            <span>📊</span> Status Validasi Infrastruktur
+                        </h4>
+                        <ul class="space-y-3 text-sm text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <span class="text-orange-500">✓</span> Pipa Continuous Integration Berjalan Lancar
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-orange-500">✓</span> Pipa Continuous Deployment Tersinkron Daring
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-orange-500">✓</span> Serverless Hosting Kompilasi Sempurna
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODERN PREMIUM FOOTER -->
+        <footer class="bg-slate-950 text-slate-600 py-12 border-t border-slate-900 text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-sm tracking-wide">
+                    &copy; 2026 GarasiAlang Project. Dibuat untuk Pengujian Praktikum MPPL / Rekayasa Perangkat Lunak.
+                </p>
+                <p class="text-xs text-slate-700 mt-2">
+                    Infrastruktur Terotomatisasi &bull; Berbasis Git Versioning &bull; Tersedia Global via Cloud Vercel
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
